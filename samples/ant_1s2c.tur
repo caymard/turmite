@@ -1,0 +1,7 @@
+states 1
+colors 2
+border infinite
+width 256
+height 256
+table
+1 0 0 0 1 0
