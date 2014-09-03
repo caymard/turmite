@@ -1,20 +1,17 @@
-=======================
-   Turmite Simulator
-=======================
+# Turmite Simulator
 
 Author: Clément Aymard
 Date  : 08/31/2014
 
 
-Introduction
-============
+## Introduction
+
 Turmite simulator is a program which simulate the turmite; it's a Turing machine where each subject (ants) has an orientation, a state and an instruction table. It evolves in a 2D grid composed of cells which have a color. Given its state and the color of the cell where it is, the ant look on its instruction table to know which color it has to put on the cell, with direction it has to have and which state it has to get.
 
-Usage
-=====
+## Usage
 The simulator can be lauched on its own (Langton's ant configuration) or with a configuration file. To do so, open a terminal, go to the program folder (release) and launch the command:
 
-	> ./turmite.exe <path to the configuration file>
+`./turmite.exe <path to the configuration file>`
 
 Some examples configuration files are provided. You can create your own configuration file, cf. the next section.
 
@@ -25,8 +22,7 @@ To save a screenshot of the window, press the 's' key on your keyboard.
 To quit the program, press the escape key on your keyboard or close the window.
 
 
-Configuration file convention
-=============================
+## Configuration file convention
 The configuration file should respect this pattern:
 
 states 2
@@ -55,21 +51,19 @@ table:  delimitation to start the intruction table
 /!\ All the above values have to be wrote in the config file /!\
 
 
-Building
-========
+## Building
 
 Windows (Visual Studio):
 To build the program easily you need CMake : http://www.cmake.org/
 
 Open a terminal and go in the 'project' folder. Run the command :
 
-	> cmake -G <your VS version> ..
+`cmake -G <your VS version> ..`
 
 Build the program by opening the Visual Solution.
 
 To know the code of your VS version, see 'cmake /?'.
 
 
-Known bugs
-==========
+## Known bugs
 Launching program with double-clic can create an additional ant at (0,0) during startup.
